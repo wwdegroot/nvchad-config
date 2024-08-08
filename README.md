@@ -1,11 +1,11 @@
 # nvchad-config
 
-NVChad config for python and rust with debugging.
+NVChad config for python, golang and rust with debugging.
 
 ### requirements
 See [install docs](https://nvchad.com/docs/quickstart/install)
 
-- neovim 0.9.1
+- neovim 0.10.0
 - Nerd Font
 - Ripgrep
 
