@@ -18,7 +18,9 @@ return {
    	opts = {
    	  eensure_installed = {
    			"vim", "lua", "vimdoc",
-        "html", "css"
+        "html", "css",
+        "regex", "bash",
+        "markdown", "markdown_inline",
    		},
    	},
    },
