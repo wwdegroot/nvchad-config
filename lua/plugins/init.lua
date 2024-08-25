@@ -56,7 +56,6 @@ return {
           top_down = false,
           render = "compact",
           stages = "fade_in_slide_out",
-          
         },
       },
       }
