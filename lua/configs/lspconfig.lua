@@ -9,7 +9,7 @@ local servers = {
   "pyright",
   "ansiblels",
   "dockerls",
-  "tsserver", "svelte",
+  "tsserver", "svelte", "tailwindcss",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
