@@ -21,6 +21,8 @@ map("n", "<leader>mj", "<cmd>m .+1<CR>==", {desc = "Move line down"})
 map("n", "<leader>mk", "<cmd>m .-2<CR>==", {desc = "Move line up"})
 map("v", "<leader>mj", "<cmd>m '>+1<CR>gv=gv", {desc = "Move line down in visual mode"})
 map("v", "<leader>mk", "<cmd>m '<-2<CR>gv=gv", {desc = "Move line up in visual mode"})
+-- diagnostics
+map("n", "<leader>gh", "<cmd>lua vim.diagnostic.open_float()<CR>", {desc = "Show hover diagnostics for line"})
 -- search and replace
 map("n", "<leader>ss", ":s/\\v", { desc = "search and replace on line"})
 map("n", "<leader>SS", ":%s/\\v", { desc = "search and replace on line"})
