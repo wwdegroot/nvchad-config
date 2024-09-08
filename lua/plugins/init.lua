@@ -4,14 +4,13 @@ return {
     -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
   },
-
   {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
     end,
   },
-
+  -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
    	opts = {
@@ -23,7 +22,12 @@ return {
         "svelte", "typescript"
    		},
    	},
-   },
+  },
+  {
+	  "chrisgrieser/nvim-various-textobjs",
+ 	  event = "UIEnter",
+	  opts = { useDefaultKeymaps = true },
+  },
   {
     "nvim-telescope/telescope.nvim",
     opts = function()
