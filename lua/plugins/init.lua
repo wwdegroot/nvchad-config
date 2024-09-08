@@ -5,7 +5,6 @@ return {
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -35,9 +34,6 @@ return {
         ["<Esc>"] = require("telescope.actions").close,
       }
 
-     -- or 
-     -- table.insert(conf.defaults.mappings.i, your table)
-
       return conf
     end,
    },
@@ -62,7 +58,15 @@ return {
         },
       },
       }
-    },
+  },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "v2.12.0",
+    config = true,
+    opts = require "configs.toggleterm.options",
+    init = require "configs.toggleterm",
+    keys = require("configs.toggleterm.keys"),
+  },
   -- debugger setup
 	{
 		"mfussenegger/nvim-dap",

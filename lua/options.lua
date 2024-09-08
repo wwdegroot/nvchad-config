@@ -1,6 +1,10 @@
 require "nvchad.options"
 
 -- add yours here!
+-- editor options
+vim.wo.relativenumber = true
+vim.o.incsearch = true
+-- shell options
 vim.o.shell = "pwsh.exe"
 
 vim.o.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
