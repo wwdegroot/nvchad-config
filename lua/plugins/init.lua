@@ -21,6 +21,7 @@ return {
         "html", "css",
         "regex", "bash",
         "markdown", "markdown_inline",
+        "svelte", "typescript"
    		},
    	},
    },
