@@ -34,5 +34,4 @@ map("n", "<leader>yf", ":%y<cr>", { desc = "yank current file to the clipboard b
 -- blackhole file content
 map("n", "<leader>df", "<cmd>%d_<cr>", { desc = "delete file content to black hole register"})
 -- copy full file path and name
---
 map("n", "<leader>cpf", '<cmd>let @+ = expand("%:p")<cr><cmd>lua print("Copied path to: " .. vim.fn.expand("%:p"))<cr>', { desc = "Copy current file name and path", silent = false})
