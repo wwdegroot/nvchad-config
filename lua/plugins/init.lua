@@ -10,6 +10,18 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "onsails/lspkind.nvim",
+  },
+  {
+    "hrsh7th/nvim-cmp",
+     -- opts = function()
+     --   return require "configs.cmp"
+     -- end,
+     -- config = function(_, opts)
+     --   require("cmp").setup(opts)
+     -- end,
+  },
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
@@ -40,6 +52,9 @@ return {
 
       return conf
     end,
+    dependencies = {
+      "dapc11/telescope-yaml.nvim"
+    },
    },
    -- UI setup
    {
