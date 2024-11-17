@@ -31,7 +31,8 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "nvchad.autocmds"
-
+-- yaml telescope extension
+require("telescope").load_extension("telescope-yaml")
 vim.schedule(function()
   require "mappings"
 end)
